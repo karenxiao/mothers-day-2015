@@ -7,20 +7,20 @@
 	<title>Happy Mother's Day</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" href="css/slimbox.css" type="text/css" media="screen" />
-	
-	<script type="text/javascript" src="js/jquery.js"></script>        
+
+	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/slimbox.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$(".scroll").click(function(event) {
-				event.preventDefault();				
+				event.preventDefault();
 				var clicked = $(this).attr("href");
 				var destination = $(clicked).offset().top - 150;
 				$("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 500);
-			});				
-			
-			$("#content").css("display", "none");			
+			});
+
+			$("#content").css("display", "none");
 			$("#content").fadeIn(1000);
 		});
 	</script>
@@ -32,14 +32,14 @@
 <!-- 		<div id="nav">
 			<ul>
 				<li><a class="scroll" href="#intro">Start</a></li>
-				<li><a class="scroll" href="#references">References</a></li>		
+				<li><a class="scroll" href="#references">References</a></li>
 			</ul>
-		</div> -->		
+		</div> -->
 	</div></div>
 	<div id="container">
 		<div id="content">
 			<div id="spacer"></div>
-			
+
 			<div id="intro">
 				<div class="contentbox">
 				<div style="text-align: center">
@@ -113,7 +113,7 @@
 					All in all, we really lucked out on the female-family-member-lottery. Keep being awesome!
 				</div>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<div id="footercontainer"><div id="footer">
 		<p>By: Karen & Willy | Mother's Day 2015</p>
