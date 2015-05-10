@@ -9,7 +9,7 @@
 body {
 	/*background: url("../images/bg.jpg") repeat;*/
 	/*background-size: 100% 100%;*/
-	background-color: #CCFF99;
+	background-color: #DBFFFF;
     min-height: 700px;
 	margin: 0;
 	padding: 0;
@@ -31,15 +31,15 @@ a:hover {
 }
 
 img {
-	width: 50%;
+	width: 80%;
 	padding: 3px;
 	float: left;
-	margin: 0 15px 15px 0;
+	margin: 0 10% 0 10%;
 	background-color: #330066;
 }
 
 img:hover {
-	background-color: #FFCC00;
+	background-color: #ADDEDE;
 }
 
 /* HEADER */
@@ -58,7 +58,7 @@ img:hover {
 #header {
 	position: fixed;
 	width: 100%;
-	background: rgba(183, 236, 113, 0.6);
+	background: #ADDEDE;
 	height: 130px;
 	overflow: hidden;
 	transition: all 0.5s;
@@ -75,7 +75,7 @@ img:hover {
 	font-size: 72px;
 	font-weight: 100;
 	font-family: 'Amatic SC', cursive;
-	color: #FFCC33;
+	color: #593098;
 	text-shadow: #333 3px 3px 3px;
 	/*text-transform: uppercase;	*/
 }
@@ -103,7 +103,7 @@ img:hover {
 #footer {
 	position: fixed;
 	width: 100%;
-	background: rgba(183, 236, 113, 0.6);
+	background: rgba(173, 222, 222, .8);
 	height: 50px;
 	overflow: hidden;
 	transition: all 0.5s;
