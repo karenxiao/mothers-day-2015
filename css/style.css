@@ -7,8 +7,9 @@
 /* BASIC STYLE */
 
 body {
-	background: url("../images/bg.jpg") no-repeat fixed;
-	background-size: 100% 100%;
+	/*background: url("../images/bg.jpg") repeat;*/
+	/*background-size: 100% 100%;*/
+	background-color: #CCFF99;
     min-height: 700px;
 	margin: 0;
 	padding: 0;
@@ -18,7 +19,7 @@ body, p {
 	font-size: 18px;	
 	font-family: 'Raleway';
 	font-weight: 300;
-	color: #999;
+	color: #5200A3;
 }
 
 a:hover {
@@ -27,6 +28,18 @@ a:hover {
 
 ::selection {
 	color: #FFF;
+}
+
+img {
+	width: 50%;
+	padding: 3px;
+	float: left;
+	margin: 0 15px 15px 0;
+	background-color: #330066;
+}
+
+img:hover {
+	background-color: #FFCC00;
 }
 
 /* HEADER */
@@ -45,7 +58,7 @@ a:hover {
 #header {
 	position: fixed;
 	width: 100%;
-	background: rgba(176, 0, 0, 1);
+	background: rgba(183, 236, 113, 0.6);
 	height: 130px;
 	overflow: hidden;
 	transition: all 0.5s;
@@ -62,7 +75,7 @@ a:hover {
 	font-size: 72px;
 	font-weight: 100;
 	font-family: 'Amatic SC', cursive;
-	color: #FFCC00;
+	color: #FFCC33;
 	text-shadow: #333 3px 3px 3px;
 	/*text-transform: uppercase;	*/
 }
@@ -90,7 +103,7 @@ a:hover {
 #footer {
 	position: fixed;
 	width: 100%;
-	background: rgba(176, 0, 0, 0.6);
+	background: rgba(183, 236, 113, 0.6);
 	height: 50px;
 	overflow: hidden;
 	transition: all 0.5s;
@@ -104,7 +117,7 @@ a:hover {
 	font-size: 18px;	
 	font-family: 'Raleway';
 	font-weight: 300;
-	color: #FFFFFF;
+	color: #000000;
 	float: right;
 }
 /* NAVIGATION */
@@ -169,6 +182,7 @@ a:hover {
 .contentbox {
 	padding: 20px;
 	margin: 20px;
+	float: left;
 }
 
 .contentbox .box {
@@ -194,10 +208,6 @@ a:hover {
 	font-weight: 500;
 	font-size: 20px;
 	color: #FFCC00;
-}
-
-#content img {
-	vertical-align: middle;
 }
 
 /* INTRO */
