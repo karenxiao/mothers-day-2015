@@ -13,24 +13,25 @@
 
 	<script>
 		$(document).ready(function(){
-			$(".contentbox img").hover(function(){
-				$("#sub").text($(this).data("sub"))
-				$("#pred").text($(this).data("pred"));
-			})
+			function addText(){
+				$("#sub").text($(this).data("text"))
+			}
+
+			$(".contentbox img").hover(addText)
+			$(".contentbox img").click(addText)
 		})
 	</script>
 </head>
 
 <body>
-	<div id="headercontainer"><div id="header">
-		<h1>Happy Mother's Day<span class="subheading">  10 Things We Like About Our Mom and Grandma</span></h1>
-<!-- 		<div id="nav">
-			<ul>
-				<li><a class="scroll" href="#intro">Start</a></li>
-				<li><a class="scroll" href="#references">References</a></li>
-			</ul>
-		</div> -->
-	</div></div>
+	<div id="headercontainer">
+		<div id="header">
+			<h1>Happy Mother's Day<span class="subheading">  10 Things We Like About Our Mom and Grandma</span></h1>
+			<div class="subContainer" >
+				<h4 id="sub">Our mom is a great mom!</h4>
+			</div>
+		</div>
+	</div>
 	<div id="container">
 		<div id="content">
 			<div id="spacer"></div>
@@ -41,66 +42,60 @@
 					<h3>In honor of Mother's Day, here are a few reasons we think our mom and grandma are great!</h3>
 					</div>
 				</div>
-				<div class="contentbox" style="position: fixed; right: 0px; width=20%">
-					<div style="text-align: center">
-						<h4><span id="sub">Our mom is </span> <span style="border-bottom:2px solid black" id="pred">a great mom asl;djf;lasdjfl;kasjdfl;kajsdl!</span></h4>
-					</div>
-				</div>
 			</div>
 			<div id="one">
 				<div class="contentbox">
-					<img src="images/IMG_7173.jpg" data-sub="Our mom is" data-pred="really great at laser tag (and general athletic activities)" />
+					<img src="images/IMG_7173.jpg" data-text="Our mom is really great at laser tag (and general athletic activities)" />
 				</div>
 			</div>
 			<div id="two">
 				<div class="contentbox">
-					<img src="images/IMG_1191.jpg" data-sub="Our grandma is" data-pred="quite athletic as well - look at her walking!"/>
+					<img src="images/IMG_1191.jpg" data-text="Grandma has great athletic talents as well - like walking!" />
 				</div>
 			</div>
 			<div id="three">
 				<div class="contentbox">
-					<img src="images/squirrel.jpg" data-sub="They are" data-pred="strong fearless women - look at Grandma holding that squirrel without even flinching" />
+					<img src="images/squirrel.jpg" data-text="They are strong fearless women - look at Grandma holding that squirrel without even flinching" />
 				</div>
 			</div>
 			<div id="threeish">
 				<div class="contentbox">
-					<img src="images/IMG_0213.jpg" data-sub="Our mom is" data-pred="showing the men of this family who's boss"/>
+					<img src="images/IMG_0213.jpg" data-text="And Mom showing the men of this family who's boss" />
 				</div>
 			</div>
 			<div id="four">
 				<div class="contentbox">
-					<img src="images/IMG_0093.jpg" data-sub="They are" data-pred="very receptive to being picked up..."/><img src="images/IMG_0551.jpg" />
+					<img src="images/IMG_0093.jpg" data-text="They are very receptive to being picked up..." /><img src="images/IMG_0551.jpg" data-text="They are very receptive to being picked up..." />
 				</div>
 			</div>
 			<div id="five">
 				<div class="contentbox">
-					<img src="images/IMG_0105.jpg" data-sub="They are" data-pred="strangely receptive to being poked..."/><img src="images/IMG_0956.jpg" />
+					<img src="images/IMG_0105.jpg" data-text="...and strangely receptive to being poked" /><img src="images/IMG_0956.jpg" data-text="...and strangely receptive to being poked" />
 				</div>
 			</div>
 			<div id="six">
 				<div class="contentbox">
-					<img src="images/IMG_5403.jpg" data-sub="They are" data-pred="great cooks too! lol..."/>
-					<!-- p class="caption">Having husbands who were great cooks meant that Mom and Grandma didn't do much cooking (#leanin #5050household) but Mom is very good at making dumplings (and very good at eating them too)</p -->
+					<img src="images/IMG_5403.jpg" data-text="Having husbands who were great cooks meant that Mom and Grandma didn't do much cooking (#leanin #5050household) but Mom is very good at making dumplings (and very good at eating them too)" />
 				</div>
 			</div>
 			<div id="seven">
 				<div class="contentbox">
-					<img src="images/tsinghua.jpg" data-sub="Our mom is" data-pred="filled with tons of school spirit (Go Tsinghua University)" />
+					<img src="images/tsinghua.jpg" data-text="Mom has a lot of school spirit (Go Tsinghua University!)" />
 				</div>
 			</div>
 			<div id="eight">
 				<div class="contentbox">
-					<img src="images/canes.jpg" data-sub="Our mom is" data-pred="here reppin' the U. Go Canes! (ignore the Harvard flags in the back)" />
+					<img src="images/canes.jpg" data-text="Go Canes! Reppin' the U (ignore the Harvard flags in the back)" />
 				</div>
 			</div>
 			<div id="nine">
 				<div class="contentbox">
-					<img src="images/IMG_1703.jpg" data-sub="Our mom is" data-pred="also in love with our school too! Check out that Xiao family Harvard spirit" />
+					<img src="images/IMG_1703.jpg" data-text="And she also loves our school too! Check out that Xiao family Harvard spirit" />
 				</div>
 			</div>
 			<div id="ten">
 				<div class="contentbox">
-					<img id="final" src="images/IMG_0639.jpg" data-sub="All in all, we really lucked out on the female-family-member-lottery. Keep being awesome!" data-pred="" />
+					<img id="final" src="images/IMG_0639.jpg" data-text="All in all, we really lucked out on the female-family-member-lottery. Keep being awesome!" />
 				</div>
 			</div>
 		</div>
