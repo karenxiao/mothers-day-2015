@@ -13,10 +13,13 @@
 
 	<script>
 		$(document).ready(function(){
-			$(".contentbox img").hover(function(){
+			function addText(){
 				$("#sub").text($(this).data("sub"))
-				$("#pred").text($(this).data("pred"));
-			})
+				$("#pred").text($(this).data("pred"))
+			}
+
+			$(".contentbox img").hover(addText)
+			$(".contentbox img").click(addText)
 		})
 	</script>
 </head>
