@@ -195,6 +195,9 @@ img:hover {
 .contentbox .box p{
 	color: #000000;
 }
+.contentbox .caption {
+	display: none;
+}
 
 #content h2 {
 	border-bottom: 2px solid #666;
