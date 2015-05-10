@@ -7,8 +7,9 @@
 /* BASIC STYLE */
 
 body {
-	background: url("../images/bg.jpg");
-	background-attachment: fixed;
+	background: url("../images/bg.jpg") no-repeat fixed;
+	background-size: 100% 100%;
+    min-height: 700px;
 	margin: 0;
 	padding: 0;
 }
@@ -34,7 +35,7 @@ a:hover {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background: url("../images/bg.jpg");
+	/*background: url("../images/bg.jpg");*/
 	z-index: 4;
 	height: 130px;
 	margin: 0;
@@ -44,7 +45,7 @@ a:hover {
 #header {
 	position: fixed;
 	width: 100%;
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(176, 0, 0, 1);
 	height: 130px;
 	overflow: hidden;
 	transition: all 0.5s;
@@ -68,12 +69,44 @@ a:hover {
 
 .subheading {
 	font-weight: 700;
-	font-family: Raleway;
+	font-family: 'Pathway Gothic One';
 	font-size: 30px;
-	color: #000033;
+	color: #FFFFFF;
 
 }
 
+/* FOOTER */
+#footercontainer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	/*background: url("../images/bg.jpg");*/
+	z-index: 4;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+}
+
+#footer {
+	position: fixed;
+	width: 100%;
+	background: rgba(176, 0, 0, 0.6);
+	height: 50px;
+	overflow: hidden;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s; 
+	-webkit-transition: all 0.5s; 
+	-o-transition: all 0.5s; 	
+	z-index: 5;
+}
+
+#footer p {
+	font-size: 18px;	
+	font-family: 'Raleway';
+	font-weight: 300;
+	color: #FFFFFF;
+	float: right;
+}
 /* NAVIGATION */
 
 #nav {
@@ -136,6 +169,17 @@ a:hover {
 .contentbox {
 	padding: 20px;
 	margin: 20px;
+}
+
+.contentbox .box {
+	margin: 50px;
+	background: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	height: 300px;
+	padding: 20px;
+}
+.contentbox .box p{
+	color: #000000;
 }
 
 #content h2 {
