@@ -95,12 +95,9 @@ img:hover {
 
 #sub {
 	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
 	text-align: center;
 	color: #888888;
-	margin: 0px;
-	padding-right: 10px;
+	padding: 10px;
 }
 
 /* FOOTER */
@@ -110,7 +107,7 @@ img:hover {
 	width: 100%;
 	/*background: url("../images/bg.jpg");*/
 	z-index: 4;
-	height: 50px;
+	height: 15%;
 	margin: 0;
 	padding: 0;
 }
@@ -118,8 +115,8 @@ img:hover {
 #footer {
 	position: fixed;
 	width: 100%;
-	background: rgba(173, 222, 222, .8);
-	height: 50px;
+	background: rgba(173, 222, 222, 1);
+	height: 100%;
 	overflow: hidden;
 	transition: all 0.5s;
 	-moz-transition: all 0.5s; 
