@@ -58,7 +58,7 @@ img:hover {
 #header {
 	position: fixed;
 	width: 100%;
-	background: #ADDEDE;
+	background: rgba(173, 222, 222, .8);
 	height: 130px;
 	overflow: hidden;
 	transition: all 0.5s;
@@ -96,7 +96,7 @@ img:hover {
 #sub {
 	position: relative;
 	text-align: center;
-	color: #888888;
+	color: #593098;
 	padding: 10px;
 }
 
@@ -210,7 +210,7 @@ img:hover {
 }
 
 #content h2 {
-	border-bottom: 2px solid #666;
+	font-family: "Pathway Gothic One";
 	font-weight: 200;
 	font-size: 48px;
 	margin: 0 0 20px 0;
